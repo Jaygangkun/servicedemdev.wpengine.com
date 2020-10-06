@@ -282,6 +282,36 @@ function my_acf_init() {
 			'icon'				=> 'megaphone',
 			'keywords'			=> array( 'call', 'action', 'block' )
 		));
+
+		acf_register_block(array(
+			'name'				=> 'industry-hero-block',
+			'title'				=> __('Industry Hero Block'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'call', 'action', 'block' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'list-image-block',
+			'title'				=> __('List And Image Block'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'call', 'action', 'block' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'job-features-block',
+			'title'				=> __('Job Features Block'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'call', 'action', 'block' )
+		));
 	}
 }
   

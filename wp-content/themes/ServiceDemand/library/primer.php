@@ -219,7 +219,8 @@ function primer_theme_support() {
 	register_nav_menus(
 		array(
 			'main-nav' => __( 'The Main Menu', 'primertheme' ),   // main nav in header
-			'footer-links' => __( 'Footer Links', 'primertheme' ) // secondary nav in footer
+			'footer-links' => __( 'Footer Links', 'primertheme' ), // secondary nav in footer
+			'top-nav' => __( 'Top Nav Links', 'primertheme' ) // secondary nav in footer
 		)
 	);
 } /* end primer theme support */

@@ -12,6 +12,10 @@
   .feature-item-tooltip{
     max-width: 300px;
   }
+
+  .list-image__img{
+    width: 500px;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -59,7 +63,11 @@
 
 
   .navbar-scroll {
-    padding: 10px 25px 10px 20px !important;
+    /* padding: 10px 25px 10px 20px !important; */
+  }
+
+  .navbar-scroll .container-fluid{
+    padding: 30px 25px 30px 50px !important;
   }
 
   .navbar-light .navbar-nav .nav-link{
@@ -244,6 +252,63 @@
   .two-column-block-wrap{
       display: block;
   }
+
+  .navbar.navbar-light{
+    padding: 0px;
+  }
+
+  .navbar .container-fluid{
+    padding: 10px 25px 10px 20px;
+  }
+
+  .list-image-block{
+    text-align: center;
+  }
+
+  .list-image-block .container{
+    text-align: left;
+  }
+
+  .list-image__img{
+    position: static;
+    transform: initial;
+    width: 90%;
+    max-width: 620px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .navbar-brand--white{
+    display: none !important;
+  }
+
+  .navbar-brand--normal{
+    display: block !important;
+  }
+
+  .industry-hero-block{
+    padding-top: 150px;
+  }
+
+  .industry-hero-title{
+    font-size: 40px;
+  }
+
+  .industry-hero-desc{
+    font-size: 20px;
+  }
+
+  .block-main-title{
+    font-size: 28px;
+  }
+
+  .block-sub-title{
+    font-size: 14px;
+  }
+
+  .block-desc{
+    font-size: 18px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -282,6 +347,10 @@
 
   .feature-hero-block{
     padding-top: 100px;
+  }
+
+  body.admin-bar .navbar.navbar-light{
+    top: 46px;
   }
 }
 
@@ -382,6 +451,23 @@
   .two-section_1{
       padding-top: 50px;
       padding-bottom: 150px;
+  }
+
+  .industry-hero-title{
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .industry-hero-block{
+    padding-top: 100px;
+  }
+
+  .block-main-title{
+    font-size: 24px;
+  }
+
+  .access-block h2{
+    font-size: 36px;
   }
 }
 

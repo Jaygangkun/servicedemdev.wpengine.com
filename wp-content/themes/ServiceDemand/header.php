@@ -41,17 +41,40 @@
 	<body <?php body_class(); ?>>
   	
   	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="top-navbar">
+			<?php
+			wp_nav_menu(array(
+				'container_id' => 'primary-menu',
+				'menu' => __( 'Top Nav Links', 'primertheme' ),
+				'theme_location' => 'top-nav',
+				'container'      => false,
+				'depth'          => 2,
+				'menu_class'     => 'top-navbar-menu',
+				'walker' => new Bootstrap_NavWalker(),
+				'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
+			));
+			?>
+		</div>
         <div class="container-fluid">
           
-          <a class="navbar-brand" href="<?php echo home_url(); ?>">
-            <?php 
-              $image = get_field('header_logo', 'option');
-              $size = 'large'; // (thumbnail, medium, large, full or custom size)
-              if( $image ) {
-                echo wp_get_attachment_image( $image, $size );
-              }
-            ?>
-          </a>
+			<a class="navbar-brand navbar-brand--normal" href="<?php echo home_url(); ?>">
+				<?php 
+				$image = get_field('header_logo', 'option');
+				$size = 'large'; // (thumbnail, medium, large, full or custom size)
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size );
+				}
+				?>
+			</a>
+			<a class="navbar-brand navbar-brand--white" href="<?php echo home_url(); ?>">
+				<?php 
+				$image = get_field('header_logo_white', 'option');
+				$size = 'large'; // (thumbnail, medium, large, full or custom size)
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size );
+				}
+				?>
+			</a>
           
         	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
         		<span class="navbar-toggler-icon"></span>
