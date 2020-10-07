@@ -312,6 +312,36 @@ function my_acf_init() {
 			'icon'				=> 'megaphone',
 			'keywords'			=> array( 'call', 'action', 'block' )
 		));
+
+		acf_register_block(array(
+			'name'				=> 'demo-form-block',
+			'title'				=> __('Demo Form Block'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'call', 'action', 'block' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'description-list-block',
+			'title'				=> __('Description List Block'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'call', 'action', 'block' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'description-image-block',
+			'title'				=> __('Description Image Block'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'call', 'action', 'block' )
+		));
 	}
 }
   

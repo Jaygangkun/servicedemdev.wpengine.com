@@ -16,6 +16,10 @@
   .list-image__img{
     width: 500px;
   }
+
+  .demo-form-block-container .row{
+    align-items: flex-start;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -309,6 +313,15 @@
   .block-desc{
     font-size: 18px;
   }
+
+  .demo-form-block{
+    padding-top: 120px;
+  }
+
+  .demo-form-block .section-title{
+    margin-bottom: 40px;
+    text-align: center;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -351,6 +364,19 @@
 
   body.admin-bar .navbar.navbar-light{
     top: 46px;
+  }
+
+  .demo-form-block{
+    overflow: hidden;
+  }
+
+  .demo-form-block-img{
+    width: 150%;
+  }
+
+  .description-image-block{
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 }
 
@@ -468,6 +494,16 @@
 
   .access-block h2{
     font-size: 36px;
+  }
+
+  .description-image-block-desc{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .description-image-block{
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 }
 
