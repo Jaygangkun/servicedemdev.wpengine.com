@@ -63,4 +63,9 @@ jQuery(document).ready(function($) {
   });
 
   new WOW().init();
+
+  $(document).on('click', '.pricing-period-title', function(){
+    $('.pricing-period-row').attr('active', $(this).attr('index'));
+    $('.pricing-period-list-row').attr('active', $(this).attr('index'));
+  })
 }); /* end of as page load scripts */
