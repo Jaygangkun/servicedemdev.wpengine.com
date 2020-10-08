@@ -335,6 +335,11 @@
   .pricing-period-list-row{
     margin-top: 60px;
   }
+
+  .ebook-list-block{
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -395,6 +400,15 @@
   .pricing-hero-block{
     padding-top: 100px;
     padding-bottom: 60px;
+  }
+
+  .ebook-list-block{
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .ebook-pagination{
+    margin-top: 30px;
   }
 }
 

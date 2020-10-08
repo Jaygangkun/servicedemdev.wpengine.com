@@ -68,4 +68,24 @@ jQuery(document).ready(function($) {
     $('.pricing-period-row').attr('active', $(this).attr('index'));
     $('.pricing-period-list-row').attr('active', $(this).attr('index'));
   })
+
+  $(document).on('click', '.ebook-pagination .pagination-link', function(){
+		var page_index = $(this).attr('page-index');
+		$.ajax({
+			url: wp_admin_url + '',
+			type: 'post',
+			data:{
+				action: 'get_ebooks',
+				offset: (page_index - 1) * 6,
+				page: page_index,
+				count: 6
+			},
+			success: function(response){
+        $('.ebook-list-row').html(response);
+        $('html, body').animate({
+          scrollTop: $('.ebook-list-row').offset().top
+        }, 500);
+			}
+		})
+	})
 }); /* end of as page load scripts */
