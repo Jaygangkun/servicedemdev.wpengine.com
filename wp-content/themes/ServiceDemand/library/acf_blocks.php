@@ -372,6 +372,16 @@ function my_acf_init() {
 			'icon'				=> 'megaphone',
 			'keywords'			=> array( 'call', 'action', 'block' )
 		));
+
+		acf_register_block(array(
+			'name'				=> 'newsletter-block',
+			'title'				=> __('Newsletter Block'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'call', 'action', 'block' )
+		));
 	}
 }
   
