@@ -36,14 +36,17 @@
             break;
           }
           $link = get_permalink($ebook->ID);
-          $image = get_the_post_thumbnail_url($ebook->ID, 'full');
+          $image = get_field('image', $ebook->ID);
+          if($image){
+            $image_url = $image['url'];
+          }
           ?>
           <div class="col-lg-4 col-md-6 ebook-item-col">
             <div class="ebook-item-wrap">
-              <div class="ebook-item-img" style="background-image:url(<?php echo $image?>)"></div>
+              <div class="ebook-item-img" style="background-image:url(<?php echo $image_url?>)"></div>
               <div class="ebook-item-content">
-                <a class="ebook-item-link" href="<?php echo $link?>"><?php echo get_the_title($ebook->ID) ?></a>
-                <div class="ebook-item-desc"><?php echo get_the_excerpt($ebook->ID)?></div>
+                <div class="ebook-item-link"><?php echo get_the_title($ebook->ID) ?></div>
+                <div class="ebook-item-desc"><?php echo the_field('description', $ebook->ID)?></div>
               </div>
             </div>
           </div>

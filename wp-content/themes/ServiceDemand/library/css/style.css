@@ -1238,7 +1238,8 @@ footer li a:hover {
 
 .features-block{
   background-color: #FFFFFF;
-  padding: 120px 0px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   background-image: url(../images/features-list-bk.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2700,6 +2701,7 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   line-height: 53px;
   text-align: center;
   letter-spacing: -1px;
+  margin: 0;
 
   color: #FFFFFF;
 }
@@ -2709,7 +2711,7 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 220px;
+  padding-top: 270px;
   padding-bottom: 90px;
 }
 
@@ -2764,6 +2766,7 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 1px;
+  margin-bottom: 8px;
 
   color: #56D0FB;
 
@@ -2825,13 +2828,14 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
 .list-image-block{
   padding-top: 80px;
   position: relative;
+  padding-bottom: 60px;
 }
 
 .list-image__img{
   position: absolute;
   right: 0px;
-  transform: translateY(-50%);
-  top: 50%;
+  width: calc(50% - 60px);
+  bottom: 0px;
 }
 
 .list-image-block .block-desc{
@@ -3019,7 +3023,7 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   height: 100%;
 }
 
-.pricing-list-item-col:nth-of-type(even) .pricing-list-item-wrap{
+.pricing-list-item-col:hover .pricing-list-item-wrap{
   border: 3px solid #9ADEFF;
   background: #FFFFFF;
 }
@@ -3108,7 +3112,12 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   padding: 10px 20px;
 }
 
-.pricing-list-item-col:nth-of-type(even) .pricing-list-item-link{
+.pricing-list-item-link:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.pricing-list-item-col:hover .pricing-list-item-link{
   background: #56D0FB;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.177395);
   border-radius: 57px;
@@ -3157,7 +3166,6 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
 }
 
 .ebook-item-link{
-  cursor: pointer;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
@@ -3166,11 +3174,6 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   color: #0F2685;
   text-decoration: none;
   display: inline-block;
-}
-
-.ebook-item-link:hover{
-  text-decoration: none;
-  color: #0F2685;
 }
 
 .ebook-item-desc{
@@ -3222,18 +3225,19 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
 }
 
 .newsletter-block{
-  background: linear-gradient(94.72deg, #25D2FF -11.47%, #0F2685 88.67%);
-  padding: 70px 0px;
+  background: linear-gradient(85.47deg, #EAF6FF -34.11%, #53A9FD 101.75%);
+  padding: 80px 0px;
 }
 
 .newsletter-block h2{
   color: #FFFFFF;
+  margin-bottom: 40px;
 }
 
 .newsletter-block h3{
   color: #0D177A;
   opacity: 0.6;
-  margin-top: 0px;
+  margin: 0;
 }
 
 .newsletter-block .row{

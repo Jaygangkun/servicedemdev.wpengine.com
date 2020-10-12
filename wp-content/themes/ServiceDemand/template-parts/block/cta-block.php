@@ -6,7 +6,7 @@
       <div class="col-lg-6 mx-auto text-center">
         <h2><?php the_field('title'); ?></h2>
         <h3><?php the_field('description'); ?></h3>
-        <?php the_field('form_embed'); ?>
+        <div class="access-block-form-wrap"><?php the_field('form_embed'); ?></div>
       </div><!-- end .col-lg-6-->
     </div><!-- end .row-->
   </div><!-- end .container-->

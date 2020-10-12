@@ -6,6 +6,12 @@
   .feature-item-tooltip{
     max-width: 400px;
   }
+
+  .list-image__img{
+    bottom: initial;
+    transform: translateY(-50%);
+    top: 50%;
+  }
 }
 
 @media only screen and (max-width : 1200px) {
