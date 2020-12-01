@@ -48,7 +48,7 @@
 		?>
         <a href="<?php echo esc_url( $link_url ); ?>" class="btn btn-primary wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.9s" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
         <?php endif; ?>
-      </div><!-- end .col-lg-6-->
+      </div><!-- end .col-lg-7-->
     </div><!-- end .row-->
   </div><!-- end .container-->
 </section> <!-- end .hero-block-->

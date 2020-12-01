@@ -34,7 +34,7 @@
               $description = get_sub_field('description');
               $items = get_sub_field('items');
               ?>
-              <div class="price-item-col col-lg-<?php echo $col_width?> wow fadeIn" data-wow-duration="0.3s" data-wow-delay="<?php echo $delay?>s">
+              <div class="price-item-col col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.3s" data-wow-delay="<?php echo $delay?>s">
                 <div class="price-item-wrap">
                   <div class="price-item__title"><?php echo $title?></div>
                   <div class="price-item__desc"><?php echo $description?></div>
