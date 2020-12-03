@@ -22,6 +22,8 @@ jQuery(document).ready(function($) {
     } else {
       $('body').css('padding-top', 0);
     }
+
+    pricingTableResizeCB();
   });
   
   $(window).trigger('resize');
@@ -87,5 +89,22 @@ jQuery(document).ready(function($) {
         }, 500);
 			}
 		})
-	})
+  })
+  
+  function pricingTableResizeCB(){
+    console.log('pricingTableResizeCB');
+    // equal same height of header 
+    $('.pricing-membership-table-left .pricing-membership-table-row-header').outerHeight($('.pricing-membership-table-right .pricing-membership-table-row-header').outerHeight());
+
+    // equal same height of payment row 
+    $('.pricing-membership-table-left .pricing-membership-table-row-payment').outerHeight($('.pricing-membership-table-right .pricing-membership-table-row-payment').outerHeight());
+
+    // equal same height of feature row 
+    var feature_rows = $('.pricing-membership-table-left .pricing-membership-table-row-feature');
+    for(var feature_index = 0; feature_index < feature_rows.length; feature_index++){
+      $('.pricing-membership-table-left .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight($('.pricing-membership-table-right .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight());
+    }
+  }
+
+  // pricingTableResizeCB();
 }); /* end of as page load scripts */
