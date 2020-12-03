@@ -3302,10 +3302,14 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   background: #EFF7FF;
   text-align: center;
   min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pricing-membership-table-row-header .pricing-membership-table-row-col{
   text-align: left;
+  display: block;
 }
 
 .pricing-membership-table-row-header .pricing-membership-table-row-col:nth-of-type(1){
@@ -3494,6 +3498,8 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   padding: 25px;
   background: #EFF7FF;
   border-radius: 17px 0px 0px 17px;
+  display: flex;
+  align-items: center;
 }
 
 .pricing-membership-table-row-sub-header{
@@ -3501,6 +3507,7 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   font-size: 20px;
   line-height: 23px;
   letter-spacing: -1px;
+  margin-bottom: 10px;
 
   color: #0F2685;
   padding: 25px;
@@ -3528,6 +3535,7 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
 }
 
 .pricing-membership-table-left .pricing-membership-table-row-payment{
+  margin-top: 20px;
   padding: 25px;
   display: flex;
 }

@@ -680,11 +680,11 @@
   }
 
   .pricing-membership-table-left{
-    width: 250px;
+    width: 150px;
   }
 
   .pricing-membership-table-right{
-    width: calc(100% - 250px);
+    width: calc(100% - 150px);
   }
 
   .pricing-membership-name{

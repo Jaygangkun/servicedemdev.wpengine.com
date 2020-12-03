@@ -102,9 +102,17 @@ jQuery(document).ready(function($) {
     // equal same height of feature row 
     var feature_rows = $('.pricing-membership-table-left .pricing-membership-table-row-feature');
     for(var feature_index = 0; feature_index < feature_rows.length; feature_index++){
-      $('.pricing-membership-table-left .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight($('.pricing-membership-table-right .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight());
+      var left_height = $('.pricing-membership-table-left .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight();
+      var right_height = $('.pricing-membership-table-right .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight();
+
+      if(left_height > right_height){
+        $('.pricing-membership-table-right .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight($('.pricing-membership-table-left .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight());  
+      }
+      else{
+        $('.pricing-membership-table-left .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight($('.pricing-membership-table-right .pricing-membership-table-row-feature[index="' + feature_index + '"]').outerHeight());
+      }
     }
   }
 
-  // pricingTableResizeCB();
+  pricingTableResizeCB();
 }); /* end of as page load scripts */
