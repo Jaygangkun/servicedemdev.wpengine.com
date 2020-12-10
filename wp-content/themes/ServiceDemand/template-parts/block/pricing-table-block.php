@@ -100,17 +100,45 @@
             </div>
 
             <div class="pricing-membership-table-row pricing-membership-table-row-link">
+              <?php $membership_index = 0; ?>
               <?php if( have_rows('membership') ): while ( have_rows('membership') ) : the_row(); ?>
                 <?php
-                $link = get_sub_field('link');
-                if($link){
+
+                $type = get_sub_field('button_type');
+                if(!$type){
+                  $type = 'link';
+                }
+
+                if($type == 'link'){
+                  $link = get_sub_field('link');
+                  if($link){
+                    ?>
+                    <div class="pricing-membership-table-row-col">
+                      <a class="pricing-membership-link" href="<?php echo $link['url']?>" target="<?php echo $link['target']?>"><?php echo $link['title']?></a>
+                    </div>
+                    <?php
+                  }  
+                }
+                else{
+                  $link_title = get_sub_field('button_title');
+                  $form_id = get_sub_field('form_id');
                   ?>
                   <div class="pricing-membership-table-row-col">
-                    <a class="pricing-membership-link" href="<?php echo $link['url']?>" target="<?php echo $link['target']?>"><?php echo $link['title']?></a>
+                    <span class="pricing-membership-link pricing-membership-link-modal" target="#membership_modal_<?php echo $membership_index?>" plan="<?php the_sub_field('name')?>"><?php echo $link_title?></a>
+                  </div>
+                  <div class="modal fade membership-modal" id="membership_modal_<?php echo $membership_index?>" tabindex="-1" role="dialog" aria-labelledby="membershipmodal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="membership-form-container contact-form-wrap">
+                          <?php echo do_shortcode('[gravityform id="'.$form_id.'" ajax="true" title="false" description="false"]');?>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <?php
                 }
                 ?>
+                <?php $membership_index ++; ?>
               <?php endwhile; endif; ?>
             </div>
         </div>

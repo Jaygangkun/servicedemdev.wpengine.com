@@ -115,4 +115,11 @@ jQuery(document).ready(function($) {
   }
 
   pricingTableResizeCB();
+
+  $(document).on('click', '.pricing-membership-link-modal', function(){
+    var target = $(this).attr('target');
+
+    $(target).find('.requested_plan input').val($(this).attr('plan'));
+    $(target).modal('toggle');
+  })
 }); /* end of as page load scripts */

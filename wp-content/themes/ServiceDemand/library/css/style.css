@@ -2210,7 +2210,11 @@ body.page-template-page-news .navbar-light .navbar-nav .nav-link.active,
 .page-id-649 .navbar-light .navbar-nav .nav-link,
 .page-id-649 .navbar-light .navbar-nav .nav-link.active,
 .page-id-607 .navbar-light .navbar-nav .nav-link,
-.page-id-607 .navbar-light .navbar-nav .nav-link.active {
+.page-id-607 .navbar-light .navbar-nav .nav-link.active,
+.page-id-741 .navbar-light .navbar-nav .nav-link,
+.page-id-741 .navbar-light .navbar-nav .nav-link.active,
+.error404 .navbar-light .navbar-nav .nav-link,
+.error404 .navbar-light .navbar-nav .nav-link.active {
   color: #4A60AA
 }
 
@@ -2238,7 +2242,9 @@ body.page-template-page-news .navbar-light .navbar-nav .nav-link:hover:after,
 body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
 .page-id-13 .navbar-light .navbar-nav .btn-header a,
 .page-id-649 .navbar-light .navbar-nav .btn-header a,
-.page-id-607 .navbar-light .navbar-nav .btn-header a {
+.page-id-607 .navbar-light .navbar-nav .btn-header a,
+.page-id-741 .navbar-light .navbar-nav .btn-header a,
+.error404 .navbar-light .navbar-nav .btn-header a {
   color: #ffffff;
 }
 
@@ -3502,6 +3508,13 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
   align-items: center;
 }
 
+.pricing-membership-table-left .pricing-membership-table-row span{
+	font-size: 12px;
+	margin-left: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 .pricing-membership-table-row-sub-header{
   font-weight: 600;
   font-size: 20px;
@@ -3550,4 +3563,22 @@ body.page-template-page-news .navbar-light .navbar-nav .btn-header a,
 
 .pricing-membership-table-right .pricing-membership-table-row-payment .pricing-membership-table-row-col:first-of-type{
   border-radius: 0px 0px 0px 29px;
+}
+
+.gfield_visibility_hidden{
+  display: none;
+}
+
+.membership-form-container.contact-form-wrap .gform_body{
+  background: transparent;
+  padding: 0px;
+}
+
+.membership-form-container .gform_footer{
+  text-align: center;
+}
+
+.membership-form-container{
+  padding: 30px;
+  background: #EAF6FF;
 }
